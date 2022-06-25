@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+/*font-family: 'DM Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+
+body,
+html {
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  background: url(../assets/background.png) no-repeat center bottom;
+  padding-bottom: 400px;
+}
+
+#header {
+  width: 100%;
+  background-color: transparent;
+  transition: background ease-out 0.2s;
+}
+
+#header.active {
+  position: fixed;
+  background: #fff;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+#header .navbar-collapse {
+  width: auto;
+}
+
+#header .nav-link {
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-left: 0;
+  padding-right: 0;
+  color: #000;
+  border-bottom: solid 4px transparent;
+}
+
+#header .nav-link:hover {
+  border-bottom: solid 4px var(--secondary);
+  color: var(--secondary);
+}
+
+#slider {
+  background: url(../assets/slider-bg.svg) no-repeat center bottom;
+  background-size: contain;
+}
+
+#slider h1 {
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+#slider h4 {
+  font-size: 20px;
+  
+}
+
+.row h2 {
+  font-size: 40px;
+}
+.row p {
+  font-size: 20px;
+}
+
+#servicos a.destaque {
+  display: block;
+  background: rgb(249, 249, 249);
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 10px 20px #a0a0a0;
+
+  margin: 0;
+  
+  color: #000;
+  text-decoration: none;
+  transition: all ease-out 0.2s;
+}
+
+#servicos a.destaque:hover {
+  background: rgb(255, 255, 255);
+  box-shadow: 2px 2px 10px 0px rgba(30, 30, 30, 0.12);
+  transform: scale(1.05);
+}
+
+#servicos p {
+  color: rgb(91, 90, 90);
+}
+
+#servicos a.destaque .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+#servicos a.destaque .img-container img {
+  max-height: 160px;
+}
+
+#servicos .badge {
+  font-weight: 400;
+}
+
+#servicos .element-item img {
+  border-radius: 5px;
+  transition: all ease-out 0.2s;
+}
+
+#servicos .element-item img:hover {
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.4);
+}
+
+#servicos .button-group {
+  margin-bottom: 30px;
+}
+
+#servicos .button-group button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  outline: none;
+}
+
+#servicos .button-group button + button {
+  margin-left: 30px;
+}
+
+#servicos .button-group button.active {
+  color: var(--primary);
+}
+
+#contato .email {
+  border-radius: 5px;
+  background-color: var(--primary);
+  color: rgb(255, 255, 255);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 30px;
+}
+
+#contato .email img {
+  position: absolute;
+  left: 30px;
+  top: -30px;
+}
+
+#contato .email form {
+  width: 60%;
+  display: flex;
+}
+
+#contato .email .form-control,
+#contato .email .form-control::placeholder {
+  background: none;
+  color: #fff;
+}
+
+#contato ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#contato ul li {
+  display: flex;
+  list-style-type: none;
+  margin-left: 25px;
+}
+
+#contato ul li:first-child {
+  margin-left: 0;
+}
+
+#contato ul li a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  transition: all ease-out 0.2s;
+}
+
+#contato ul li a:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+
+#contato ul li img {
+  max-height: 20px;
+}

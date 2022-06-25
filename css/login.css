@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+/*font-family: 'DM Sans', sans-serif;*/
+
+:root {
+  --bg-color: #e9e0d8;
+  --primary-color: #F56530;
+  --primary-dark: #F84C0A;
+  --secondary-color: #FE8153;
+  --terciary-color: #FDA786;
+  --light: #f0f0f0;
+  --medium: #cacaca;
+  --dark: #a2a2a2;
+}
+
+* {
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assets/background.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.login {
+  width: 360px;
+  height: min-content;
+  padding: 20px;
+  border-radius: 20px;
+  background: #ffffffd0;
+  box-shadow: 0px 0px 20px 3px rgba(5, 5, 5, 0.337);
+  
+}
+
+.login h1 {
+  font-size: 25px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.login form {
+  font-size: 16px;
+}
+
+.login form .form-group {
+  margin-bottom: 12px;
+}
+
+.login form input[type="submit"] {
+  font-size: 16px;
+  margin-top: 15px;
+  background-color: #e5e5e5;
+}
+
